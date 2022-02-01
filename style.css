@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Playfair Display", serif;
+  background: url(casino.jpg) no-repeat center/cover;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+  width: 60%;
+  background: transparent;
+  margin: 0 auto;
+  position: relative;
+}
+
+.top {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+h2 {
+  color: yellow;
+  font-size: 2rem;
+  margin-top: -2rem;
+}
+
+.remaining {
+  color: white;
+  font-size: 1.3rem;
+}
+
+button {
+  cursor: pointer;
+  background-color: rgb(235, 235, 74);
+  padding: 0.5rem 1rem;
+  font-family: inherit;
+  border-radius: 5px;
+  border: none;
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: 0.04em;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background-color: red;
+}
+
+#new-deck {
+  align-self: flex-start;
+}
+
+.card-container {
+  width: 80%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: -2rem;
+  padding: 0;
+}
+
+span {
+  color: yellow;
+  font-weight: 900;
+  font-size: 1.4rem;
+}
+
+.card-container p {
+  font-size: 1.3rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+}
+
+#cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+  margin: -5rem 0;
+  height: 80%;
+  padding: 1rem;
+}
+
+.card-slot {
+  height: 200px;
+  width: 40%;
+  border: 2px solid black;
+}
+
+.card-slot img {
+  height: 100%;
+  width: 100%;
+}
+
+#draw-cards {
+  width: 100%;
+}
+
+@media screen and (max-width: 600px) {
+  .main {
+    margin: 0.5rem auto;
+  }
+
+  button {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .card-slot {
+    height: 180px;
+    width: 70%;
+  }
+
+  .remaining {
+    font-size: 1rem;
+  }
+}

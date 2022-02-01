@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="script.js" defer></script>
+
+    <title>War | Arbaaz Sumar</title>
+  </head>
+  <body>
+    <main id="main" class="main">
+      <div class="top">
+        <button id="new-deck" type="button" class="btn">New Deck</button>
+        <p class="remaining" id="remaining"></p>
+      </div>
+      <h2 class="scoreText" id="scoreText"></h2>
+      <div class="card-container">
+        <p>Computer: <span id="computer" class="computer">0</span></p>
+        <div id="cards">
+          <div id="card-slot-1" class="card-slot"></div>
+          <div id="card-slot-1" class="card-slot"></div>
+        </div>
+        <p>Player: <span id="player" class="player">0</span></p>
+      </div>
+      <button disabled id="draw-cards">Draw</button>
+    </main>
+  </body>
+</html>
